@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="menu--close menu--open"></div>
   <header class="header">
     <div class="container">
       <div class="header__inner">
@@ -19,8 +20,19 @@
           <img src="images/logo.svg" alt="TealuxE">
         </a>
         <nav class="menu">
+          <button class="menu__btn">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
           <ul class="menu__list">
             <!--ul.menu__list>li.menu__item*5>a.menu__link[href=#]-->
+              <li class="menu__close">
+                <button class="menu__close-btn">
+                  <img src="/images/close.svg" alt="">
+                </button>
+              </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Black</a>
               </li>
@@ -35,6 +47,36 @@
               </li>
               <li class="menu__item">
                 <a href="#" class="menu__link">Pu-erh</a>
+              </li>
+              <li class="mobile-nav">
+                <ul class="mobile-menu">
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile__menu-link">Contact Us</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile__menu-link">Our Blog</a>
+                  </li>
+                  <li class="mobile-menu__item">
+                    <a href="#" class="mobile__menu-link">Shipping and Delivery</a>
+                  </li>
+                </ul>
+                <ul class="mobile-actions">
+                  <li class="user-actions__item">
+                    <a href="#" class="user-actions__link">
+                      <img src="images/card.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="user-actions__item">
+                    <a href="#" class="user-actions__link">
+                      <img src="images/user.svg" alt="">
+                    </a>
+                  </li>
+                  <li class="user-actions__item">
+                    <a href="#" class="user-actions__link">
+                      <img src="images/search.svg" alt="">
+                    </a>
+                  </li>
+                </ul>
               </li>
           </ul>
         </nav>
@@ -81,5 +123,6 @@
       </p>
     </blockquote>
   </main>
+  <script src='js/main.js'></script>
 </body>
 </html>
